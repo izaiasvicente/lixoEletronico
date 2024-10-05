@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem Lixo Eletrônico</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./imagens/reciclagemIcone.png" alt="Lixeira com Eletronicos Para Reciclagem" class="recicle">
+            <ul class="lista-botoes">
+                <li class="lista-botoes__item">
+                    <a href="#principal">
+                        <button class="button">
+                            Início
+                        </button>
+                    </a>
+                </li>
+                <li class="lista-botoes__item">
+                    <a href="#lixo">
+                        <button class="button">
+                            O que é Lixo Eletrônico?
+                        </button>
+                    </a>
+                </li>
+                <li class="lista-botoes__item">
+                    <a href="#curiosidades">
+                        <button class="button">
+                            Curiosidades e Impacto Ambiental
+                        </button>
+                    </a>
+                </li>
+                <li class="lista-botoes__item">
+                    <a href="#coleta">
+                        <button class="button">
+                            Pontos de Coleta
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="principal" class="principal">
+        <div class="container">
+            <div>
+                <h1>Descarte Correto de Lixo Eletrônico</h1>
+                <p>Saiba onde e como descartar seu lixo eletrônico de forma segura e sustentável.</p>
+            </div>
+        </div>
+    </section>
+    <section id="lixo" class="layoutPrinc">
+        <div class="container">
+            <img class="imagem-esq" src="./imagens/recicleCel.jpg" alt="Foto de Celulares Para Reciclagem">
+            <div>
+                <h2>O que é o Lixo Eletrônico?</h2>
+                <p>
+                    Lixo eletrônico é todo resíduo material produzido pelo descarte de equipamentos eletrônicos, 
+                    como computadores, celulares, baterias, e eletrodomésticos. Estes itens podem conter substâncias 
+                    tóxicas que poluem o meio ambiente.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="layoutSecund">
+        <div class="container">
+            <div>
+                <h2>Por que Descartar Corretamente?</h2>
+                <p>
+                    Descarte inadequado de lixo eletrônico pode causar danos ambientais, 
+                    contaminando solos e água com metais pesados. Além disso, reciclar componentes 
+                    eletrônicos ajuda a reduzir o consumo de recursos naturais.
+                </p>
+            </div>
+            <img class="imagem-dir" src="./imagens/containerRecicle.jpg" alt="Foto de um container de reciclagem de eletrônicos">
+        </div>
+    </section>
+    <section id="curiosidades" class="layoutPrinc">
+        <div class="container">
+            <img class="imagem-esq" src="./imagens/reciclagemBaterias.png" alt="Foto de baterias para a reciclagem">
+            <div>
+                <h2>Curiosidades sobre Lixo Eletrônico</h2>
+                <p>
+                    Aqui estão alguns fatos interessantes sobre o lixo eletrônico e a reciclagem:
+                </p>
+                <ul class="lista">
+                    <li>
+                        Energia Recuperada: "Reciclar 1 milhão de laptops pode economizar a 
+                        energia elétrica usada por 3.500 casas em um ano."
+                    </li>
+                    <li>
+                        Ouro nos Eletrônicos: "Os aparelhos eletrônicos descartados contêm quantidades 
+                        significativas de metais preciosos, como ouro e prata. Por exemplo, em 1 tonelada 
+                        de celulares descartados, pode haver até 300 gramas de ouro."
+                    </li>
+                    <li>
+                        Produção Global: "Em 2021, o mundo gerou cerca de 57 milhões de toneladas de lixo 
+                        eletrônico, e apenas 17% foi reciclado corretamente."
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="layoutSecund">
+        <div class="container">
+            <div>
+                <h2>Quanto Tempo Leva para Desaparecer?</h2>
+                <p>
+                    Os materiais eletrônicos que descartamos levam centenas de anos para se decompor. 
+                    Veja abaixo o tempo médio de decomposição de alguns itens:
+                </p>
+                <ul class="lista">
+                    <li>
+                        Pilhas e Baterias: 500 a 1.000 anos (Possuem materiais como chumbo, 
+                        mercúrio, ácido sulfúrico e muitos outros);
+                    </li>
+                    <li>
+                        Celulares e Computadores: 1.000 anos ou mais (componentes como plástico e metais pesados 
+                        permanecem no ambiente por séculos);
+                    </li>
+                    <li>
+                        Televisores e Eletrodomésticos: Mais de 1.000 anos para se decompor, liberando substâncias
+                        tóxicas no solo e na água.
+                    </li>
+                </ul>
+            </div>
+            <img class="imagem-dir" src="./imagens/curiosidade.jpg" alt="Curiosidade sobre a reciclagem de celulares">
+        </div>
+    </section>
+    <section id="coleta" class="layoutPrinc ponto-coleta">
+        <div class="container ponto-coleta">
+            <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1Mzg9xpQhANAiPDW3gGXLDIR271UKw8o&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            <div class="lista">
+                <h2>Pontos de Coleta</h2>
+                <p>
+                    Clique em um ponto no mapa para visualizar o endereço completo.
+                    Procure pelo ícone de reciclagem: <img class="icone" src="./imagens/icone.jpeg" alt="Ícone"><br>
+                    Endereços:
+                </p>
+                <ul class="lista-coleta"></ul>
+                    <li>
+                        Loja VIVO, Av. Sul Brasil 128, Centro – (descarte de celulares e baterias);
+                    </li>
+                    <li>
+                        Loja TIM, Av. Sete de Setembro 302, Centro – (descarte de celulares e baterias); 
+                    </li>
+                    <li>
+                        Ecoponto, Rua Jorge Lacerda s/n, Centro – (descarte de eletroeletrônicos).
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
