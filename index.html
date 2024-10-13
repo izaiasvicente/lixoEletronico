@@ -130,7 +130,7 @@
     </section>
     <section id="coleta" class="layoutPrinc ponto-coleta">
         <div class="container ponto-coleta">
-            <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1Mzg9xpQhANAiPDW3gGXLDIR271UKw8o&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1smYaHrnz1DsbLUhsIaEP9-3qNmoJzao&ehbc=2E312F" width="640" height="480"></iframe>
             <div class="lista">
                 <h2>Pontos de Coleta</h2>
                 <p>
@@ -152,5 +152,31 @@
             </div>
         </div>
     </section>
+    <div class="form-container">
+        <button id="toggle-form" class="toggle-button">
+            Avalie a página <span id="toggle-icon">▼</span>
+        </button>
+        <div id="form-avaliacao" class="formulario hidden">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="nota">Nota:</label>
+                <select id="nota" name="nota">
+                    <option value="5">5 - Excelente</option>
+                    <option value="4">4 - Bom</option>
+                    <option value="3">3 - Regular</option>
+                    <option value="2">2 - Ruim</option>
+                    <option value="1">1 - Péssimo</option>
+                </select>
+                <label for="opniao">Descreva sua opinião:</label>
+                <textarea id="opniao" name="opniao" rows="4" placeholder="Digite aqui seus comentários"></textarea>
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
