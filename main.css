@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(181, 230, 29);
+    padding: 0 0 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-botoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.lista-botoes__item {
+    margin: 0 10px;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 16px;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 180, 41);
+}
+
+.recicle {
+    max-width: 64px;
+    width: 100%;
+}
+
+.principal {
+    padding: 120px 0;
+    background-color: rgb(34, 177, 76);
+}
+
+.principal .container {
+    display: flex;
+    border-radius: 24px;
+    background-image: url(./imagens/principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal .container div {
+    padding: 50px 0;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    align-content: center;
+}
+
+.principal .container h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.principal .container p {
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.layoutPrinc {
+    padding: 120px 0;
+    background-color: rgb(0, 162, 232);
+}
+
+.layoutPrinc .container {
+    display: flex;
+}
+
+.imagem-esq {
+    border-radius: 8px;
+    margin-right: 20px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.imagem-dir {
+    border-radius: 8px;
+    margin-left: 20px;
+    max-width: 460px;
+    width: 100%;
+}
+
+.layoutPrinc h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.layoutPrinc p {
+    font-size: 26px;
+}
+
+.layoutSecund {
+    padding: 50px 0;
+    background-color: rgb(153, 217, 234);
+}
+
+.layoutSecund .container {
+    display: flex;
+}
+
+.layoutSecund h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 36px;
+}
+
+.layoutSecund p {
+    font-size: 26px;
+}
+
+.lista {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.lista li {
+    margin-top: 6px;
+}
+
+#curiosidades p {
+    font-size: 20px;
+}
+
+.ponto-coleta {
+    background-color: rgb(195, 195, 195);
+}
+
+.mapa {
+    margin-right: 10px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.icone {
+    max-width: 24px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.lista-coleta {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.toggle-button {
+    margin-top: 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    position: fixed;
+    top: 15%;
+    right: 10px;
+    z-index: 1001;
+}
+
+.toggle-button:hover {
+    background-color: rgb(255, 180, 41);
+}
+
+#toggle-icon {
+    margin-left: 5px; 
+    font-size: 20px;
+    line-height: 0;
+}
+
+.formulario {
+    position: fixed;
+    top: 25%;
+    right: 10px;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid rgb(0, 162, 232);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    z-index: 1000;
+    display: block;
+}
+
+.formulario h3 {
+    text-align: center;
+    color: rgb(34, 177, 76);
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: rgb(255, 180, 41);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        position: relative;
+    }
+
+    header .container {
+        display: block;
+        text-align: center;
+    }
+
+    .layoutPrinc .container {
+        display: block;
+    }
+
+    .layoutSecund .container {
+        display: block;
+    }
+
+    .lista-botoes {
+        display: block;
+        padding: 10px 0;
+        list-style: none;
+    }
+    
+    .lista-botoes__item {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .imagem-esq {
+        margin: 0;
+    }
+
+    .imagem-dir {
+        margin: 0;
+    }
+
+    .form-container {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .toggle-button {
+        justify-content: center;
+        position: static;
+        width: 200px;
+        margin: 20px 0;
+    }
+
+    #toggle-icon {
+        display: none;
+    }
+
+    .formulario {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .imagem-esq {
+        max-width: 420px;
+    }
+
+    .imagem-dir {
+        max-width: 420px;
+    }
+
+    .lista-botoes {
+        align-items: center;
+    }
+}
